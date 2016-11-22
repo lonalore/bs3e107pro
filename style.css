@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=latin-ext');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #064771;
+    outline: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+hr.star-light,
+hr.star-primary {
+    padding: 0;
+    border: none;
+    border-top: solid 3px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+
+hr.star-light {
+    border-color: #064771;
+}
+
+hr.star-light:after {
+    color: #064771;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #064771;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover {
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+.navbar a:focus {
+    outline: none;
+    color: #f8f8f8;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav > li > a,
+.navbar .navbar-nav > li > a:hover {
+    color: #f8f8f8;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: none;
+    color: #f8f8f8;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #f8f8f8;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #333333;
+    background-color: #f8f8f8;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: none;
+}
+
+.navbar-right .dropdown-menu {
+    width: 100%;
+    color: #064771;
+}
+
+header {
+    text-align: center;
+    color: #064771;
+    position: relative;
+}
+
+header .commit-map {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+header .commit-map-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+header .ol-overlaycontainer-stopevent {
+    z-index: 3;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    z-index: 4;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.senary-container {
+    background-color: #064771;
+}
+
+.senary-container h2 {
+    padding: 1.5em 1em 1.5em 0;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 1.75em;
+    font-weight: 300;
+    line-height: 1.1em;
+    color: #f8f8f8;
+    text-transform: lowercase;
+}
+
+@media (min-width: 768px) {
+    body {
+        margin-top: 100px;
+    }
+
+    header .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+
+    header .intro-text .skills {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}

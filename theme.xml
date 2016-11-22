@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Theme name="bs3e107pro" version="1.0" date="2016-11-21" compatibility="2.0">
+    <author name="lonalore" url="https://github.com/lonalore/bs3e107pro"/>
+    <summary>Bootstrap 3 theme</summary>
+    <description>Bootstrap 3 based theme for e107 v2.</description>
+    <category>generic</category>
+    <keywords>
+        <word>bootstrap</word>
+        <word>e107</word>
+    </keywords>
+    <screenshots>
+        <image>preview.png</image>
+    </screenshots>
+    <layouts>
+        <layout name='home' title='Home' default='true'>
+            <custompages>FRONTPAGE</custompages>
+        </layout>
+    </layouts>
+</e107Theme>
