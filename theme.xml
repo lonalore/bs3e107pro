@@ -11,6 +11,9 @@
     <screenshots>
         <image>preview.png</image>
     </screenshots>
+    <plugins>
+        <plugin name='e107projects' url='https://github.com/lonalore/e107projects'/>
+    </plugins>
     <layouts>
         <layout name='home' title='Home' default='true'>
             <custompages>FRONTPAGE</custompages>

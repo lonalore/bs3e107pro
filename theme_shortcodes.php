@@ -83,6 +83,7 @@ class theme_shortcodes extends e_shortcode
 				$text .= '{SOCIAL_LOGIN: size=2x&label=1}';
 			}
 
+			/*
 			$text .= '<form method="post" onsubmit="hashLoginPassword(this);return true" action="' . e_REQUEST_HTTP . '" accept-charset="UTF-8">';
 			$text .= '<div class="form-group">{LM_USERNAME_INPUT}</div>';
 			$text .= '<div class="form-group">{LM_PASSWORD_INPUT}</div>';
@@ -94,9 +95,16 @@ class theme_shortcodes extends e_shortcode
 			$text .= '<div class="form-group">';
 			$text .= '<input class="btn btn-primary btn-block" type="submit" name="userlogin" id="userlogin" value="' . LAN_LOGINMENU_51 . '">';
 			$text .= '<a href="{LM_FPW_LINK=href}" class="btn btn-default btn-sm btn-block">' . LAN_LOGINMENU_4 . '</a>';
-			$text .= '<a href="{LM_RESEND_LINK=href}" class="btn btn-default btn-sm btn-block">' . LAN_LOGINMENU_40 . '</a>';
+
+			if($userReg == 1)
+			{
+				$text .= '<a href="{LM_RESEND_LINK=href}" class="btn btn-default btn-sm btn-block">' . LAN_LOGINMENU_40 . '</a>';
+			}
+
 			$text .= '</div>';
 			$text .= '</form>';
+			*/
+
 			$text .= '</div>';
 			$text .= '</li>';
 			$text .= "</ul>";
