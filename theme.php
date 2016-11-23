@@ -81,7 +81,11 @@ $LAYOUT['_header_'] = '
 ';
 
 $LAYOUT['_footer_'] = '
-
+<footer id="footer">
+	<div class="footer-inner text-center">
+		<p>{SITEDISCLAIMER}</p>
+	</div>
+</footer>
 ';
 
 $LAYOUT['home'] = '
@@ -93,7 +97,7 @@ $LAYOUT['home'] = '
 	{MENU=1}
 	{SETSTYLE=default}
 	
-    <div class="container">
+    <div class="container prologue-container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="intro-text">
@@ -110,7 +114,7 @@ $LAYOUT['home'] = '
 {MENU=2}
 {SETSTYLE=default}
 
-<div class="main-container">
+<div id="content" class="main-container">
     <div class="container">
 	    {ALERTS}
 		<div class="row">
@@ -124,7 +128,7 @@ $LAYOUT['home'] = '
 
 $LAYOUT['project'] = '
 {SETSTYLE=default}
-<div class="main-container">
+<div id="content" class="main-container">
     <div class="container">
 	    {ALERTS}
 		<div class="row">
