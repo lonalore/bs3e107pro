@@ -118,6 +118,7 @@ hr.star-light:after {
 }
 
 header {
+    min-height: 250px;
     text-align: center;
     color: #064771;
     position: relative;
@@ -148,6 +149,10 @@ header .intro-text .skills {
     font-weight: 400;
 }
 
+section {
+
+}
+
 footer .footer-inner {
     border-top: 1px solid gainsboro;
     margin-top: 0;
@@ -162,6 +167,18 @@ footer .footer-inner p {
     text-align: center;
     padding: 0;
     margin: 0;
+}
+
+.layout-full-profile {
+    margin-bottom: 45px;
+}
+
+.tab-content {
+    margin-bottom: 25px;
+}
+
+.tab-pane {
+    padding-top: 15px;
 }
 
 @media (min-width: 768px) {

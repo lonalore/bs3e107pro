@@ -15,8 +15,20 @@
         <plugin name='e107projects' url='https://github.com/lonalore/e107projects'/>
     </plugins>
     <layouts>
-        <layout name='home' title='Home' default='true'>
+        <layout name='sidebar_right' title='Sidebar - Right' default='true'/>
+        <layout name='full_home' title='Full width - Home' default='false'>
             <custompages>FRONTPAGE</custompages>
+            <menuPresets>
+                <area id='1'>
+                    <menu name='e107projects_openlayers'/>
+                </area>
+                <area id='2'>
+                    <menu name='e107projects_summary'/>
+                </area>
+            </menuPresets>
+        </layout>
+        <layout name='full_profile' title='Full width - Profile' default='false'>
+            <custompages>user.php usersettings.php</custompages>
         </layout>
     </layouts>
 </e107Theme>

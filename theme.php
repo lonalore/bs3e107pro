@@ -10,17 +10,29 @@ if(!defined('e107_INIT'))
 	exit;
 }
 
+// This theme uses Bootstrap with version 3.x.
+define('BOOTSTRAP', 3);
+// This theme uses Font-Awesome with version 4.x.
+define('FONTAWESOME', 4);
+// Viewport.
+define('VIEWPORT', "width=device-width, initial-scale=1.0");
+define('OTHERNEWS_COLS', false); // no tables, only divs.
+define('OTHERNEWS_LIMIT', 3); // Limit to 3. 
+define('OTHERNEWS2_COLS', false); // no tables, only divs.
+define('OTHERNEWS2_LIMIT', 3); // Limit to 3. 
+define('COMMENTLINK', e107::getParser()->toGlyph('fa-comment'));
+define('COMMENTOFFSTRING', '');
+define('PRE_EXTENDEDSTRING', '<br />');
+
 if(($library = e107::library('load', 'cdn.bootstrap')) && !empty($library['loaded']))
 {
-	define("BOOTSTRAP", 3);
+	define("BOOTSTRAP_LOADED", true);
 }
 
 if(($library = e107::library('load', 'cdn.fontawesome')) && !empty($library['loaded']))
 {
-	define("FONTAWESOME", 4);
+	define("FONTAWESOME_LOADED", true);
 }
-
-define('VIEWPORT', "width=device-width, initial-scale=1.0");
 
 /**
  * @param string $caption
@@ -88,7 +100,26 @@ $LAYOUT['_footer_'] = '
 </footer>
 ';
 
-$LAYOUT['home'] = '
+$LAYOUT['sidebar_right'] = '
+{SETSTYLE=default}
+<div id="content" class="main-container layout-sidebar-right">
+    <div class="container">
+	    {ALERTS}
+		<div class="row">
+   			<section class="col-sm-9">
+				{---}
+ 			</section>
+ 			
+ 			<aside class="col-sm-3" role="complementary">
+ 			    {SETSTYLE=default}
+ 			    {MENU=1}
+			</aside>
+        </div>
+    </div>
+</div>
+';
+
+$LAYOUT['full_home'] = '
 {SETSTYLE=default}
 <!-- Header. -->
 <header id="header">
@@ -114,27 +145,27 @@ $LAYOUT['home'] = '
 {MENU=2}
 {SETSTYLE=default}
 
-<div id="content" class="main-container">
+<div id="content" class="main-container layout-full-home">
     <div class="container">
 	    {ALERTS}
 		<div class="row">
-   			<div class="col-xs-12">
+   			<section class="col-xs-12">
 				{---}
- 			</div>
+ 			</section>
         </div>
     </div>
 </div>
 ';
 
-$LAYOUT['project'] = '
+$LAYOUT['full_profile'] = '
 {SETSTYLE=default}
-<div id="content" class="main-container">
+<div id="content" class="main-container layout-full-profile">
     <div class="container">
 	    {ALERTS}
 		<div class="row">
-   			<div class="col-xs-12">
+   			<section class="col-xs-12">
 				{---}
- 			</div>
+ 			</section>
         </div>
     </div>
 </div>
