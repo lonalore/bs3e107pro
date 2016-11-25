@@ -117,12 +117,20 @@ class theme_shortcodes extends e_shortcode
 		$text .= '<li class="dropdown">{PM_NAV}</li>';
 		$text .= '<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{SETIMAGE: w=20} {USER_AVATAR: shape=circle} ' . USERNAME . ' <b class="caret"></b></a>';
 		$text .= '<ul class="dropdown-menu">';
+
+		$url = e107::getUrl()->create('projects/submit');
 		$text .= '<li>';
-		$text .= '<a href="{LM_USERSETTINGS_HREF}"><span class="glyphicon glyphicon-cog"></span> ' . LAN_SETTINGS . '</a>';
+		$text .= '<a href="' . $url . '"><span class="glyphicon glyphicon-folder-open"></span> ' . LAN_PLUGIN_E107PROJECTS_SUBMIT . '</a>';
 		$text .= '</li>';
+
 		$text .= '<li>';
 		$text .= '<a class="dropdown-toggle no-block" role="button" href="{LM_PROFILE_HREF}"><span class="glyphicon glyphicon-user"></span> ' . LAN_LOGINMENU_13 . '</a>';
 		$text .= '</li>';
+
+		$text .= '<li>';
+		$text .= '<a href="{LM_USERSETTINGS_HREF}"><span class="glyphicon glyphicon-cog"></span> ' . LAN_SETTINGS . '</a>';
+		$text .= '</li>';
+
 		$text .= '<li class="divider"></li>';
 
 		if(ADMIN)
