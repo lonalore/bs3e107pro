@@ -164,7 +164,9 @@ $LAYOUT['full_profile'] = '
 	    {ALERTS}
 		<div class="row">
    			<section class="col-xs-12">
+   			    {SETSTYLE=only-content}
 				{---}
+				{SETSTYLE=default}
  			</section>
         </div>
     </div>

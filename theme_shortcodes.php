@@ -14,6 +14,7 @@ e107::lan('theme');
  */
 class theme_shortcodes extends e_shortcode
 {
+	public $override = true;
 
 	/**
 	 * Constructor.
@@ -23,6 +24,43 @@ class theme_shortcodes extends e_shortcode
 		parent::__construct();
 	}
 
+	function sc_realname($parm)
+	{
+		$pref = e107::getPref();
+		$sc = e107::getScBatch('usersettings');
+
+		$options = array(
+			'title'    => '',
+			'size'     => 40,
+			'required' => $pref['signup_option_realname']
+		);
+
+		if(!empty($sc->var['user_login']) && !empty($sc->var['user_xup'])) // social login active.
+		{
+			$options['readonly'] = true;
+		}
+
+		return e107::getForm()->text('realname', $sc->var['user_login'], 100, $options);
+	}
+
+	function sc_email($parm)
+	{
+		$sc = e107::getScBatch('usersettings');
+
+		$options = array(
+			'size'     => 40,
+			'title'    => '',
+			'required' => true
+		);
+
+		if(!empty($sc->var['user_email']) && !empty($sc->var['user_xup'])) // social login active.
+		{
+			$options['readonly'] = true;
+		}
+
+		return e107::getForm()->email('email', $sc->var['user_email'], 100, $options);
+	}
+
 	/**
 	 * Return with HTML formatted site name.
 	 *
@@ -30,7 +68,8 @@ class theme_shortcodes extends e_shortcode
 	 */
 	function sc_site_name()
 	{
-		return e107::getParser()->parseTemplate('{SITENAME}');
+		return 'Activity Map';
+		// return e107::getParser()->parseTemplate('{SITENAME}');
 	}
 
 	/**
@@ -40,7 +79,8 @@ class theme_shortcodes extends e_shortcode
 	 */
 	function sc_site_slogan()
 	{
-		return e107::getParser()->parseTemplate('{SITEDESCRIPTION}');
+		return 'Real-time notifications about commits, issues... etc.';
+		// return e107::getParser()->parseTemplate('{SITEDESCRIPTION}');
 	}
 
 	/**

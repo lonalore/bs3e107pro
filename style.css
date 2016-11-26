@@ -78,6 +78,10 @@ hr.star-light:after {
     letter-spacing: 1px;
 }
 
+.navbar .navbar-nav .dropdown-toggle {
+    min-width: 200px;
+}
+
 .navbar .navbar-nav > li > a,
 .navbar .navbar-nav > li > a:hover {
     color: #f8f8f8;
@@ -181,13 +185,26 @@ footer .footer-inner p {
     padding-top: 15px;
 }
 
+.jGrowl-notification {
+    background-color: rgba(0, 0, 0, 0.7);
+    word-break: normal;
+}
+
+.jGrowl-notification .jGrowl-header {
+    font-size: 1em;
+}
+
+.jGrowl-closer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 @media (min-width: 768px) {
     body {
         margin-top: 100px;
     }
 
     header .intro-text .name {
-        font-size: 4.75em;
+        font-size: 3em;
     }
 
     header .intro-text .skills {
