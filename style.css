@@ -191,19 +191,6 @@ footer .footer-inner p {
     padding-top: 15px;
 }
 
-.jGrowl-notification {
-    background-color: rgba(0, 0, 0, 0.7);
-    word-break: normal;
-}
-
-.jGrowl-notification .jGrowl-header {
-    font-size: 1em;
-}
-
-.jGrowl-closer {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
 @media (min-width: 768px) {
     body {
         margin-top: 100px;
