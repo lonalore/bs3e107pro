@@ -80,6 +80,12 @@ hr.star-light:after {
 
 .navbar .navbar-nav .dropdown-toggle {
     min-width: 200px;
+    text-align: center;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-toggle {
+    min-width: 0;
+    text-align: left;
 }
 
 .navbar .navbar-nav > li > a,

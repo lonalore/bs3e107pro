@@ -14,51 +14,12 @@ e107::lan('theme');
  */
 class theme_shortcodes extends e_shortcode
 {
-	public $override = true;
-
 	/**
 	 * Constructor.
 	 */
 	function __construct()
 	{
 		parent::__construct();
-	}
-
-	function sc_realname($parm)
-	{
-		$pref = e107::getPref();
-		$sc = e107::getScBatch('usersettings');
-
-		$options = array(
-			'title'    => '',
-			'size'     => 40,
-			'required' => $pref['signup_option_realname']
-		);
-
-		if(!empty($sc->var['user_login']) && !empty($sc->var['user_xup'])) // social login active.
-		{
-			$options['readonly'] = true;
-		}
-
-		return e107::getForm()->text('realname', $sc->var['user_login'], 100, $options);
-	}
-
-	function sc_email($parm)
-	{
-		$sc = e107::getScBatch('usersettings');
-
-		$options = array(
-			'size'     => 40,
-			'title'    => '',
-			'required' => true
-		);
-
-		if(!empty($sc->var['user_email']) && !empty($sc->var['user_xup'])) // social login active.
-		{
-			$options['readonly'] = true;
-		}
-
-		return e107::getForm()->email('email', $sc->var['user_email'], 100, $options);
 	}
 
 	/**
@@ -155,7 +116,10 @@ class theme_shortcodes extends e_shortcode
 
 		$text = '<ul class="nav navbar-nav navbar-right">';
 		$text .= '<li class="dropdown">{PM_NAV}</li>';
-		$text .= '<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{SETIMAGE: w=20} {USER_AVATAR: shape=circle} ' . USERNAME . ' <b class="caret"></b></a>';
+		$text .= '<li class="dropdown">';
+		$text .= '<a href="#" class="dropdown-toggle" data-toggle="dropdown">';
+		$text .= '{SETIMAGE: w=20} {USER_AVATAR: shape=circle} ' . USERNAME . ' <b class="caret"></b>';
+		$text .= '</a>';
 		$text .= '<ul class="dropdown-menu">';
 
 		$url = e107::getUrl()->create('projects/submit');
