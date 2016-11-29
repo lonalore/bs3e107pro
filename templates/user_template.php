@@ -329,31 +329,28 @@ if(deftrue('BOOTSTRAP'))
 	<div class="user-profile row">
 	    <div class="col-md-12">
 	        <div class="panel panel-default panel-profile clearfix">
-	            <div class="panel-heading" style="height:180px; background-size: cover;background-image: url( {USER_PHOTO: type=url});">
-	                <h5 class="user-id">'.LAN_USER_58.' {USER_ID}</h5>
-	            </div>
-	            <div class="panel-body text-center">
+	            <div class="col-sm-4 panel-body text-center">
 	                {SETIMAGE: w=200&h=200&crop=1}
 	                {USER_PICTURE: shape=circle&link=1}
 	                <div class="profile-header">
 	                    <h4>{USER_NAME}</h4>
+	                    <h5>{USER_REALNAME}</h5>
 	                    {USER_SIGNATURE}
 	                    {USER_RATING}
 	                    {USER_SENDPM}
 	                </div>
 	            </div>
-	            <div class="panel-body">
-	                <div class="row"><div class="col-xs-12 col-md-4">'.LAN_USER_63.'</div><div class="col-xs-12 col-md-8">{USER_REALNAME}</div></div>
-	                <div class="row"><div class="col-xs-12 col-md-4">'.LAN_USER_60.'</div><div class="col-xs-12 col-md-8">{USER_EMAIL}</div></div>
-	                <div class="row"><div class="col-xs-12 col-md-4">'.LAN_USER_65.'</div><div class="col-xs-12 col-md-8">{USER_LASTVISIT}<br /><small class="padding-left">{USER_LASTVISIT_LAPSE}</small></div></div>
-	                <div class="row"><div class="col-xs-12 col-md-4">'.LAN_USER_59.'</div><div class="col-xs-12 col-md-8">{USER_JOIN}<br /><small class="padding-left">{USER_DAYSREGGED}</small></div></div>
-	                <div class="row"><div class="col-xs-12 col-md-4">'.LAN_USER_66.'</div><div class="col-xs-12 col-md-8">{USER_VISITS}</div></div>
-	                {USER_ADDONS}
+	            <div class="panel-body col-sm-8">
+	                <div class="row">
+	                    <div class="col-xs-12 col-md-4">'.LAN_USER_60.'</div>
+	                    <div class="col-xs-12 col-md-8">{USER_EMAIL}</div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-xs-12 col-md-4">'.LAN_USER_59.'</div>
+	                    <div class="col-xs-12 col-md-8">{USER_JOIN}<br /><small class="padding-left">{USER_DAYSREGGED}</small></div>
+	                </div>
 	                {USER_EXTENDED_ALL}
-	                <div class="row"></div>
-	            </div>
-	            <div class="panel-body text-center">
-	                {USER_UPDATE_LINK}
+	                {USER_ADDONS}
 	            </div>
 	            <div class="panel-body">
 	                <ul class="pager user-view-nextprev">

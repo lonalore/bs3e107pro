@@ -237,6 +237,29 @@ footer .footer-inner p {
     padding-top: 15px;
 }
 
+.panel-profile {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.panel-profile .user-avatar {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.panel-profile .profile-header h4 {
+    padding-bottom: 0;
+}
+
+.panel-profile .profile-header h5 {
+    font-weight: normal;
+}
+
+.panel-profile .panel-body div.row:first-child {
+    border-top: none;
+}
+
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
