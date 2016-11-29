@@ -237,14 +237,6 @@ footer .footer-inner p {
     padding-top: 15px;
 }
 
-.search-results .visible-xs .label {
-    background: #CECECE;
-    color: #333333;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 400;
-}
-
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
