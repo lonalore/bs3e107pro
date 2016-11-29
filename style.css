@@ -52,6 +52,10 @@ hr.star-light:after {
     color: #064771;
 }
 
+p.lead {
+    margin-bottom: 10px;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -127,6 +131,40 @@ hr.star-light:after {
     color: #064771;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #064771;
+}
+
+#project-search-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#project-search-form .dropdown-menu {
+    min-width: 200px;
+    padding: 10px;
+    left: auto !important;
+    right: 0;
+}
+
+#project-search-form .dropdown-menu li.radio-content {
+    padding-left: 20px;
+}
+
+#project-search-form .dropdown-menu li.radio-content .radio {
+    padding-top: 0;
+}
+
 header {
     min-height: 250px;
     text-align: center;
@@ -163,6 +201,14 @@ section {
 
 }
 
+aside {
+
+}
+
+aside h2.caption {
+    font-size: 16px;
+}
+
 footer .footer-inner {
     border-top: 1px solid gainsboro;
     margin-top: 0;
@@ -189,6 +235,23 @@ footer .footer-inner p {
 
 .tab-pane {
     padding-top: 15px;
+}
+
+.search-results .visible-xs .label {
+    background: #CECECE;
+    color: #333333;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:visited {
+        color: #f8f8f8;
+    }
 }
 
 @media (min-width: 768px) {
