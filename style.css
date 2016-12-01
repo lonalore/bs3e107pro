@@ -145,6 +145,10 @@ p.lead {
     background-color: #064771;
 }
 
+.alert {
+    margin-top: 20px;
+}
+
 #project-search-form {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -270,6 +274,7 @@ footer .footer-inner p {
     margin: 0;
 }
 
+.layout-sidebar-right,
 .layout-full-profile {
     margin-bottom: 45px;
 }
@@ -277,10 +282,6 @@ footer .footer-inner p {
 .layout-full-profile .user-profile-contributions a {
     margin-bottom: 5px;
     display: inline-block;
-}
-
-.layout-sidebar-right {
-    margin-bottom: 45px;
 }
 
 .tab-content {
