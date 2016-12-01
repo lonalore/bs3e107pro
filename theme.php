@@ -128,6 +128,25 @@ $LAYOUT['sidebar_right'] = '
 </div>
 ';
 
+$LAYOUT['sidebar_right_project'] = '
+{SETSTYLE=default}
+<div id="content" class="main-container layout-sidebar-right">
+    <div class="container">
+	    {ALERTS}
+		<div class="row">
+   			<section class="col-sm-9">
+				{---}
+ 			</section>
+ 			
+ 			<aside class="col-sm-3" role="complementary">
+ 			    {SETSTYLE=default}
+ 			    {MENU=1}
+			</aside>
+        </div>
+    </div>
+</div>
+';
+
 $LAYOUT['full_home'] = '
 {SETSTYLE=default}
 <!-- Header. -->

@@ -342,10 +342,6 @@ if(deftrue('BOOTSTRAP'))
 	            </div>
 	            <div class="panel-body col-sm-8">
 	                <div class="row">
-	                    <div class="col-xs-12 col-md-4">'.LAN_USER_60.'</div>
-	                    <div class="col-xs-12 col-md-8">{USER_EMAIL}</div>
-	                </div>
-	                <div class="row">
 	                    <div class="col-xs-12 col-md-4">'.LAN_USER_59.'</div>
 	                    <div class="col-xs-12 col-md-8">{USER_JOIN}<br /><small class="padding-left">{USER_DAYSREGGED}</small></div>
 	                </div>

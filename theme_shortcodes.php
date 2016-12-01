@@ -122,7 +122,7 @@ class theme_shortcodes extends e_shortcode
 		$text .= '</a>';
 		$text .= '<ul class="dropdown-menu">';
 
-		$url = e107::getUrl()->create('projects/submit');
+		$url = e107::url('e107projects', 'projects/submit');
 		$text .= '<li>';
 		$text .= '<a href="' . $url . '"><span class="glyphicon glyphicon-folder-open"></span> ' . LAN_PLUGIN_E107PROJECTS_SUBMIT . '</a>';
 		$text .= '</li>';
@@ -133,6 +133,11 @@ class theme_shortcodes extends e_shortcode
 
 		$text .= '<li>';
 		$text .= '<a href="{LM_USERSETTINGS_HREF}"><span class="glyphicon glyphicon-cog"></span> ' . LAN_SETTINGS . '</a>';
+		$text .= '</li>';
+
+		$url = e107::url('nodejs_notify', 'index');
+		$text .= '<li>';
+		$text .= '<a href="' . $url . '"><span class="glyphicon glyphicon-cog"></span> ' . LAN_THEME_BS3E107_02 . '</a>';
 		$text .= '</li>';
 
 		$text .= '<li class="divider"></li>';

@@ -16,6 +16,17 @@
     </plugins>
     <layouts>
         <layout name='sidebar_right' title='Sidebar - Right' default='true'/>
+        <layout name='sidebar_right_project' title='Sidebar - Right (Project)' default='false'>
+            <custompages>project.php project/*</custompages>
+            <menuPresets>
+                <area id='1'>
+                    <menu name='e107projects_contributions'/>
+                </area>
+                <area id='1'>
+                    <menu name='e107projects_last_updated'/>
+                </area>
+            </menuPresets>
+        </layout>
         <layout name='full_home' title='Full width - Home' default='false'>
             <custompages>FRONTPAGE</custompages>
             <menuPresets>

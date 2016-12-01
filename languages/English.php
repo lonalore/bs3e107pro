@@ -6,7 +6,7 @@
  */
 
 define("LAN_THEME_BS3E107_01", "BS3 e107");
-define("LAN_THEME_BS3E107_02", "");
+define("LAN_THEME_BS3E107_02", "Notifications");
 define("LAN_THEME_BS3E107_03", "");
 define("LAN_THEME_BS3E107_04", "");
 define("LAN_THEME_BS3E107_05", "");
