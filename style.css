@@ -56,6 +56,23 @@ p.lead {
     margin-bottom: 10px;
 }
 
+blockquote {
+    border-color: #337ab7;
+}
+
+.list-group-item .badge {
+    background-color: #337ab7;
+}
+
+.list-group-item .label {
+    display: inline-block;
+    float: right;
+}
+
+a.list-group-item, button.list-group-item {
+    color: #333333;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -321,6 +338,42 @@ footer .footer-inner p {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:visited {
         color: #f8f8f8;
+    }
+
+    .project-readme-container h1 {
+        font-size: 20px;
+    }
+
+    .project-readme-container h2 {
+        font-size: 18px;
+    }
+
+    .project-readme-container h3 {
+        font-size: 16px;
+    }
+
+    .project-readme-container h4 {
+        font-size: 16px;
+    }
+
+    .project-readme-container h5 {
+        font-size: 16px;
+    }
+
+    .project-readme-container h6 {
+        font-size: 14px;
+    }
+
+    .project-readme-container p {
+        font-size: 14px;
+    }
+
+    .project-readme-container li {
+        font-size: 14px;
+    }
+
+    .project-readme-container img {
+        max-width: 100%;
     }
 }
 

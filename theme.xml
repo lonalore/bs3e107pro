@@ -20,6 +20,12 @@
             <custompages>project.php /project/</custompages>
             <menuPresets>
                 <area id='1'>
+                    <menu name='e107projects_project_links'/>
+                </area>
+                <area id='1'>
+                    <menu name='e107projects_project_releases'/>
+                </area>
+                <area id='1'>
                     <menu name='e107projects_contributions'/>
                 </area>
                 <area id='1'>
