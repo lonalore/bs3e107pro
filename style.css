@@ -437,4 +437,8 @@ footer .footer-inner p {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
+    .panel-profile .panel-body.col-sm-8 {
+        min-height: 500px;
+    }
 }
