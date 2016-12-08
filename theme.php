@@ -160,6 +160,7 @@ $LAYOUT['full_home'] = '
         <div class="row">
             <div class="col-xs-12">
                 <div class="intro-text">
+                    <div class="intro-text-hide"><i id="hideIntro" class="fa fa-times" aria-hidden="true"></i></div>
                     <span class="name">{SITE_NAME}</span>
                     <hr class="star-light">
                     <span class="skills">{SITE_SLOGAN}</span>
