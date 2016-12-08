@@ -201,3 +201,19 @@ $LAYOUT['full_profile'] = '
     </div>
 </div>
 ';
+
+$LAYOUT['full_contributors'] = '
+{SETSTYLE=default}
+<div id="content" class="main-container layout-full-contributors">
+    <div class="container">
+	    {ALERTS}
+		<div class="row">
+   			<section class="col-xs-12">
+   			    {SETSTYLE=default}
+				{---}
+				{SETSTYLE=default}
+ 			</section>
+        </div>
+    </div>
+</div>
+';

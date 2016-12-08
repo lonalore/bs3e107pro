@@ -45,7 +45,10 @@
             </menuPresets>
         </layout>
         <layout name='full_profile' title='Full width - Profile' default='false'>
-            <custompages>user.php usersettings.php</custompages>
+            <custompages>/user/ user.php</custompages>
+        </layout>
+        <layout name='full_contributors' title='Full width - Contributors' default='false'>
+            <custompages>/contributors contributors.php</custompages>
         </layout>
     </layouts>
 </e107Theme>
